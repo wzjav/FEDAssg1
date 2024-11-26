@@ -3,31 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Design</title>
+  <title>Milk Product Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Navigation Bar -->
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-      
+    <div class="logo">
+        <a href="index.html">
+            <img src="Screenshot 2024-11-26 152949.png" alt="logo">
+        </a>
+    </div>
+    <ul>    
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
     </ul>
   </nav>
 
-
-  <!-- Home Section -->
-    <h1>Home Page</h1>
-    <div class="content-grid">
-      <div class="content-block"></div>
-      <div class="content-block"></div>
-      <div class="content-block"></div>
+  <!-- Content Section -->
+  <div class="content">
+    <!-- First Image Section -->
+    <div class="first-section">
+      <img src="3d-milk-ad-template-for-product-display-milk-pack-mock-up-set-in-a-miniature-farm-island-on-sunshine-sky-background-vector.jpg" alt="Fresh Milk Ad">
+      <div class="text-overlay">
+        <button onclick="shopNow()">SHOP NOW</button>
+      </div>
     </div>
 
+    <!-- Second Image Section -->
+    <div class="second-section">
+      <div class="image-container">
+        <img src="milk-packaging-plastic-bottle-mockup-display-podium-paper-cut-fields-cows-milk-splashes_1199132-185762.jpg" alt="Milk Bottle Ad">
+        <div class="hover-content">
+          <h2>Enjoy 20% OFF<br>Your First Order</h2>
+          <button onclick="redeemNow()">REDEEM NOW</button>
+        </div>
+      </div>
+      <div class="text-right">
+        <h2> ENJOY 20% <br>YOUR FIRST ORDER</h2>
+        <button onclick="redeemNow()">REDEEM NOW</button>`
+      </div>
+    </div>
+  </div>
 
+  <script src="script.js"></script>
 </body>
+</html>
+
 
   
