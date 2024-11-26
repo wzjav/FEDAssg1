@@ -1,5 +1,5 @@
 function shopNow() {
-    alert("Redirecting to the Shop Now page!");
+    alert("Menu Page Opened");
   }
   
   function redeemNow() {
