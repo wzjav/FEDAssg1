@@ -1,61 +1,70 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f8ff;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+}
   
-  .logo {
-    position: absolute; /* Position the logo at the top left */
-    top: 15px;
-    left: 20px;
-    cursor: pointer;
+.logo {
+  position: absolute; /* Position the logo at the top left */
+  top: 15px;
+  left: 20px;
+  cursor: pointer;
 }
 
 .logo img {
-    height: 40px; /* Adjust the size of the logo */
-    width: auto; /* Keep aspect ratio */
+  height: 40px; /* Adjust the size of the logo */
+  width: auto; /* Keep aspect ratio */
 }
 
   /* Navigation Bar */
-  nav {
-    background-color: rgba(241, 245, 249, 1);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 20px;
-  }
+nav {
+  background-color: rgba(241, 245, 249, 1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 20px;
+}
   
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 10px 0;
-  }
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px 0;
+}
   
-  nav ul li {
-    margin: 0 15px;
-  }
+nav ul li {
+  margin: 0 15px;
+}
   
-  nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-  }
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav .cart{
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;
   
-  /* Content Section */
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin: 20px 0;
-  }
-  
+}
+
+/* Content Section */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
   /* First Section */
   .first-section {
     position: relative;
@@ -253,6 +262,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .menu-item img {
@@ -263,6 +273,124 @@ body {
 
 .menu-item:hover {
   transform: scale(1.05);
+}
+
+/* Product Section */
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.product-details {
+  display: flex;
+  gap: 30px;
+}
+
+.product-details img {
+  width: 500px;
+  height:470px;
+  border-radius: 20px;
+}
+
+.product-info {
+  max-width: 600px;
+}
+
+.product-info h1 {
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product-info p {
+  font-size: 20px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.quantity-select {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.quantity-select label {
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.quantity-select select {
+  padding: 5px;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: pointer;
+}
+
+.product-info button {
+  background-color: #007BFF;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product-info button:hover {
+  background-color: #0056b3;
+}
+
+/* Related Products */
+
+.related-products {
+  margin: 30px auto;
+  padding: 20px;
+  
+}
+
+.related-products h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+
+}
+
+.related-products-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+.related-products-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.related-products-scroll::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.related-products-scroll .product {
+  text-align: center;
+  
+}
+
+.related-products-scroll .product img {
+  width: 300px;
+  height: 300px; 
+  border-radius: 10px;
+}
+
+.related-products-scroll .product p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
     /* Contact Us Section */

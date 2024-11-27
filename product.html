@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">
+        <a href="index.html">
+            <img src="Screenshot 2024-11-26 152949.png" alt="logo">
+        </a>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="cart.html" class="cart">🛒</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Product Section -->
+  <div class="product-container">
+    <div class="product-details">
+      <img src="Hokkaido-Milk1.webp" alt="Hokkaido-Flavoured Strawberry Milk">
+      <div class="product-info">
+        <h1>Hokkaido-Flavoured Strawberry Milk</h1>
+        <p>Hokkaido-flavored strawberry milk is a delightful and unique beverage. This sweet and creamy drink combines the freshness of strawberries with the richness of Hokkaido milk. Hokkaido, being Japan's largest dairy-producing region, is renowned for its high-quality milk.</p>
+        <div class="quantity-select">
+          <label for="quantity">Qty:</label>
+          <select id="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Related Products -->
+  <div class="related-products">
+    <h2>Related Products</h2>
+    <div class="related-products-scroll">
+      <div class="product">
+        <img src="Hokkaido-Milk3.jpg" alt="Original Milk">
+        <h3>Platinum</h3>
+      </div>
+      <div class="product">
+        <img src="China-Milk2.webp" alt="Vanilla Milk">
+        <h3>Vanilla</h3>
+      </div>
+      <div class="product">
+        <img src="Thailand-Milk2.jpg" alt="Multi-Flavour Milk">
+        <h3>Coffee</h3>
+      </div>
+      <div class="product">
+        <img src="Thailand-Milk3.jpeg" alt="Packet Size Milk">
+        <h3>Vanilla</h3>
+      </div>
+      <div class="product">
+        <img src="China-Milk1.jpg" alt="Coffee Milk">
+        <h3>Original</h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
