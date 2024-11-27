@@ -62,9 +62,7 @@ body {
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    overflow: hidden;
     margin: 0px 50px;
-    
     height: 700px;
   }
   
@@ -73,7 +71,6 @@ body {
     display: flex;
     align-items: center;
     gap: 15rem;
-    /* height: 700px; */
   }
   .first-section img {
     width: 100%;
@@ -206,7 +203,61 @@ body {
     border: 1px solid black;
   }
 
+/*Menu Page*/
+.filter-section {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
 
+.filter-section button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-section button:hover {
+  background-color: #0056b3;
+}
+
+.menu-title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.menu-item {
+  text-align: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.menu-item img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
 
     /* Contact Us Section */
 h1{
@@ -244,4 +295,7 @@ button {
     border: 2px solid;
     cursor: pointer;
 }
-  
+.submit{
+  font-size: 19px;
+  font-weight: bold;
+}
