@@ -27,7 +27,7 @@ nav {
   z-index: 1000;
   padding: 20px;
 }
-  
+
 nav ul {
   list-style: none;
   display: flex;
@@ -85,6 +85,7 @@ nav .cart{
     width: 100%;
     height: 100%;
     display: block;
+    
   }
   
   .text-overlay {
@@ -99,8 +100,6 @@ nav .cart{
     
     
   }
-  
-  
   
 
   
@@ -176,6 +175,7 @@ nav .cart{
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
   }
   
   .hover-content button:hover {
@@ -204,6 +204,7 @@ nav .cart{
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
   }
   
   .text-right button:hover {
@@ -309,9 +310,7 @@ nav .cart{
 .product-info p {
   font-size: 20px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  line-height: 1.5; 
 }
 
 .quantity-select {
@@ -461,6 +460,108 @@ nav .cart{
   }
 
 
+}
+
+/* Cart Section */
+.cart-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #e8f5ff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#cart-items {
+  font-size: 20px;
+}
+
+
+
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.cart-item .item-info {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.cart-item .item-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.cart-item .item-info p {
+  margin: 5px 0 0;
+  color: gray;
+  font-size: 14px;
+}
+
+.cart-item .quantity {
+  margin-right: 20px;
+}
+
+.cart-item .remove-item {
+  color: red;
+  cursor: pointer;
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cart-summary .total {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 500px;
+}
+
+#checkout-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+#checkout-button:hover {
+  background-color: #0056b3;
+}
+
+.remove-button {
+  cursor: pointer;
+}
+.remove-button:hover {
+  background-color: #e0e0e0;
+}
+
+#empty-car-message{
+  display: none;
 }
 
     /* Contact Us Section */
