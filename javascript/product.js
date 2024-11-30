@@ -30,7 +30,7 @@ function addToCart() {
   localStorage.setItem("cart", JSON.stringify(cart));
   
   // Alert user and direct to the cart page
-    lert(`Added ${quantity} item(s) to the cart!`); 
+  alert(`Added ${quantity} item(s) to the cart!`); 
   window.location.href = "cart.html";
 }
 
