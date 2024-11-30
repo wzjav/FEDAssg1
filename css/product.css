@@ -110,6 +110,7 @@ nav .cart{
   background-color: #007BFF;
   padding: 10px 20px;
   font-size: 16px;
+  border:none;
   border-radius: 10px;
   cursor: pointer;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
