@@ -1,0 +1,280 @@
+/* General Styles */
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  overflow-x: hidden;
+}
+    
+.logo {
+  position: absolute; /* Position the logo at the top left */
+  top: 15px;
+  left: 20px;
+  cursor: pointer;
+}
+.logo img {
+  height: 40px; /* Adjust the size of the logo */
+  width: auto; /* Keep aspect ratio */
+}
+  
+/* Navigation Bar */
+nav {
+  background-color: rgba(241, 245, 249, 1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 20px;
+}
+  
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+    
+nav ul li {
+  margin: 0 15px;
+}
+    
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+}
+nav .cart{
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;  
+}
+
+/*Menu Page*/
+.filter-section {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+  
+.filter-section button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 50px;
+  width: 200px;
+}
+  
+.filter-section button:hover {
+  background-color: #0056b3;
+}
+  
+.menu-title {
+  text-align: center;
+  font-size: 36px;
+  margin: 20px 0;
+}
+  
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  max-width: 100%;  
+}
+  
+.menu-item {
+  position: relative;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.menu-item img {
+  width: 350px;
+  height: 280px;
+  margin-bottom: 10px;
+}
+  
+.menu-item:hover {
+  transform: scale(1.05);
+}
+  
+/*responsive design for menu page*/
+@media (max-width: 1220px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    row-gap: 10px;
+  }
+  .menu-item {
+    font-size: 80%;
+  }
+  .menu-item img{
+    width:90%;
+    height:320px;
+  }
+  .menu-title {
+    font-size: 150%;
+    margin: 10px;
+  }
+}
+/*responsive design for menu display*/
+@media (max-width: 750px) {
+  .menu-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+    padding-top: 0px;
+    row-gap: 5px;
+  }
+  .menu-item {
+    font-size: 80%;
+  }
+  .menu-item img{
+    width:100%;
+    height:320px;
+  }
+  .menu-title {
+    font-size: 150%;
+    margin: 10px;
+  }
+}
+/*responsive design for nav bar and menu display*/
+@media (max-width: 640px) {
+  body {
+    max-width: 640px;
+  }
+  nav ul li {
+    margin: 0 6px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  nav .cart {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+  }
+  .logo img {
+    height: 40px;
+    /* Adjust the size of the logo */
+    width: auto;
+    /* Keep aspect ratio */
+  }
+  .filter-section {
+    margin: 15px;
+    padding-top: 10px;
+  }
+  
+  .filter-section button {
+    font-size: 120%;
+  }
+  .menu-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+    padding-top: 0px;
+    row-gap: 10px;
+  }
+  .menu-item {
+    font-size:80%;
+  }
+  .menu-item img{
+    width:90%;
+    height: 320px;
+  }
+  .menu-title {
+    font-size: 150%;
+    margin: 10px;
+  }
+}
+/*responsive design for smaller screen*/
+@media (max-width: 475px) {
+  body {
+    max-width: 475px;
+  }
+  nav {
+    padding: 5px;
+    height: 30%;
+  }
+  nav ul li {
+    margin: 0 3px;
+    padding: 0px;
+  }
+  nav ul li a {
+    position: relative;
+    width: 20px;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px;
+    padding-bottom: 5px;
+  }
+  nav .cart {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    top: 13px;
+  }
+  .logo img {
+    display: block;
+    margin-left: 5px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 30px;
+    height: auto;
+  }
+  .filter-section {
+    margin: 5px;
+    gap: 5px;
+  }
+  .filter-section button {
+    font-size: 75%;
+    height: 70%;
+  }
+  .menu-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+    padding-top: 0px;
+    row-gap: 10px;
+  }
+  .menu-item {
+    font-size: 80%;
+  }
+  .menu-item img{
+    max-width:80%;
+    height:80%;
+  }
+  .menu-title {
+    font-size: 150%;
+    margin: 10px;
+  }
+  h1 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+  

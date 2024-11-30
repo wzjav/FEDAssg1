@@ -1,0 +1,312 @@
+/* General Styles */
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  overflow-x: hidden;
+}
+    
+.logo {
+  position: absolute; /* Position the logo at the top left */
+  top: 15px;
+  left: 20px;
+  cursor: pointer;
+}
+  
+.logo img {
+  height: 40px; /* Adjust the size of the logo */
+  width: auto; /* Keep aspect ratio */
+}
+
+  /* Navigation Bar */
+nav {
+  background-color: rgba(241, 245, 249, 1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 20px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px 0;
+}  
+nav ul li {
+  margin: 0 15px;
+}   
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+}
+  
+nav .cart{
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;  
+}
+
+/* Product Section */
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.product-details {
+  display: flex;
+  gap: 30px;
+}
+.product-details img {
+  width: 500px;
+  height:470px;
+  border-radius: 20px;
+}
+  
+.product-info {
+  max-width: 600px;
+}
+  
+.product-info h1 {
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product-info p {
+  font-size: 20px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5; 
+}
+.quantity-select {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.quantity-select label {
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  
+.quantity-select select {
+  padding: 5px;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: pointer;
+}
+
+.product-info button {
+  background-color: #007BFF;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  
+.product-info button:hover {
+  background-color: #0056b3;
+}
+  
+/* Related Products */
+  
+.related-products {
+  margin: 30px auto;
+  padding: 20px;  
+}
+.related-products h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+}
+  
+.related-products-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+.related-products-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.related-products-scroll::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+  
+.related-products-scroll .product {
+  text-align: center;  
+}
+  
+.related-products-scroll .product img {
+  width: 300px;
+  height: 300px; 
+  border-radius: 10px;
+}
+.related-products-scroll .product p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  
+/*responsive design for product page*/
+@media (max-width: 1080px){
+  .product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  .product-details {
+    display: flex;
+    gap: 30px;
+  }
+  .product-details img {
+    width: 40%;
+    height:auto;
+    border-radius: 20px;
+  }
+  .product-info {
+    max-width: 600px;
+  }
+} 
+
+/*responsive design for smaller screen*/
+@media (max-width:980px){
+  .product-details {
+    flex-direction: column;
+  }
+  .product-details img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 420px;
+    height: auto;
+  }
+  .product-info p {
+    font-size: 100%;
+  }
+}
+/*responsive design for nav bar and product details*/
+@media (max-width: 640px) {
+  body {
+    max-width: 640px;
+  }
+  nav ul li {
+    margin: 0 6px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  nav .cart {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+  }
+  .logo img {
+    height: 40px;
+    /* Adjust the size of the logo */
+    width: auto;
+    /* Keep aspect ratio */
+  }
+  h1 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .product-details {
+    flex-direction: column;
+  }
+  .product-details img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 73%;
+    height: auto;
+  }
+  .product-info p {
+    font-size: 100%;
+  }
+  .product-info h1 {
+    font-size: 200%;
+  }
+}
+/*rsponsive design for smaller screen*/
+@media (max-width: 475px) {
+  body {
+    max-width: 475px;
+  }
+  nav {
+    padding: 5px;
+    height: 30%;
+  }
+  nav ul li {
+    margin: 0 3px;
+    padding: 0px;
+  }
+  nav ul li a {
+    position: relative;
+    width: 20px;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px;
+    padding-bottom: 5px;
+  }
+  nav .cart {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    top: 13px;
+  }
+  .logo img {
+    display: block;
+    margin-left: 5px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 30px;
+    height: auto;
+  }
+
+  h1 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    }
+
+  .product-details {
+    flex-direction: column;
+  }
+
+  .product-details img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
+  }
+  .product-info p {
+    font-size: 100%;
+    }
+  .product-info h1 {
+    font-size: 200%;
+  }
+}
