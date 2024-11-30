@@ -56,7 +56,7 @@ function filterItems(category) {
   const product = {
     name: "Hokkaido-Flavoured Strawberry Milk",
     price: 7.9,
-    image: "Hokkaido-Milk1.webp",
+    image: "Pictures/Hokkaido-Milk1.webp",
     quantity: quantity,
   };
 
@@ -171,18 +171,19 @@ function removeFromCart(productName) {
   updateCartPage(); //update cart display
 }
 
-
+// function to update cart summary (total amount and quantity)
 function updateCartSummary() {
-  const selectedItems = cart.filter(item => item.selected);
-  const totalAmount = selectedItems.reduce((total, item) => total + (item.price * item.quantity), 0);
-  const itemCount = selectedItems.reduce((count, item) => count + item.quantity, 0);
-  document.getElementById("total-amount").textContent = totalAmount.toFixed(2);
-  document.getElementById("item-count").textContent = itemCount;
+  const selectedItems = cart.filter(item => item.selected); // get items that are selected
+  const totalAmount = selectedItems.reduce((total, item) => total + (item.price * item.quantity), 0); // calculate total price
+  const itemCount = selectedItems.reduce((count, item) => count + item.quantity, 0); // calculate total quantity
+  document.getElementById("total-amount").textContent = totalAmount.toFixed(2); // update total price
+  document.getElementById("item-count").textContent = itemCount; //update total quantity
 }
 
+// update cart function
 function updateCartPage() {
-  cartItemsContainer.innerHTML = "";
-  updateCartSummary();
+  cartItemsContainer.innerHTML = ""; //clear current cart item
+  updateCartSummary(); //call function to update susmmary of cart
 
   if (cart.length === 0) {
     emptyCartMessage.style.display = "block"; // Displays the empty cart message
@@ -192,6 +193,7 @@ function updateCartPage() {
   }
 }
 
+// checkout button function
 function checkOutButton(){
 
   // Check if at least one item is selected
