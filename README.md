@@ -1,5 +1,5 @@
 # FEDAssg1
-One or two paragraphs providing an overview of your project. Tell us about your project.
+My website is a product website selling fresh milk. Users are able to view the different products available, view product description and add items to cart.
 
 
 ## Design Process
@@ -76,12 +76,11 @@ Most of my problems was with my Javascript code. For example, one of my problems
 
 # Credits
 ## Content
-
+- I used [ChatGPT](https://chatgpt.com/) for helping me with errors that I encountered.
+- I also used [StackOverflow](https://stackoverflow.com/) to also help me with problems I have.
 
 ## Media
 - The pictures for the home page was from [First Section](https://www.vecteezy.com/vector-art/21296423-3d-milk-ad-template-for-product-display-milk-pack-mock-up-set-in-a-miniature-farm-island-on-sunshine-sky-background) and [Second Section](https://www.freepik.com/photos/milk-packaging-design/4)
 - The pictures for the menu page was from [Strawberry](https://www.kaiserfoods.com.sg/product/yotsuba-milk-strawberry-200ml/), [Original](https://www.kaiserfoods.com.sg/product/hokkaido-yotsuba-fresh-milk-1l/), [Platinum](https://www.meiji.com/global/food/milk/meiji-oishii-gyunyu.html), [Original](https://japan-food.jetro.go.jp/en/feature/detail/664.html), [Vanilla](https://online.citysuper.com.hk/products/hokkaido-specially-select-3-6-milk-18000017), [Packet Size](https://tastell.en.made-in-china.com/product/cmDUWJioZwVO/China-Milk-Beverage-with-Real-Puree-on-Sale.html), [Multi-Flavour](https://shopee.com.my/Susu-Meiji-Thailand-450ml-i.304205301.25131449618), [Coffee](https://cpfreshmartshop.com/shop/%E0%B9%80%E0%B8%A1%E0%B8%88%E0%B8%B4-%E0%B8%99%E0%B8%A1%E0%B8%AA%E0%B8%94%E0%B8%A3%E0%B8%AA%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F-200%E0%B8%8B%E0%B8%B5%E0%B8%8B%E0%B9%8A),[Vanilla](https://www.makro.pro/en/p/894302-7204377821379)
 - The pictures for the the About Us page was generated using AI from [Gemini](https://gemini.google.com/app/2306cc34d98e82f8)
 
-Acknowledgements
-I received inspiration for this project from X
