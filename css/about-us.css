@@ -1,7 +1,7 @@
 /* General Styles */
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin: 0;
+  margin: 0; 
   padding: 0;
   background-color: #f0f8ff;
   overflow-x: hidden;
@@ -21,28 +21,28 @@ body {
   
 /* Navigation Bar */
 nav {
-  background-color: rgba(241, 245, 249, 1);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 20px;
+  background-color: rgba(241, 245, 249, 1); /*light gray background*/
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*shadow effect*/
+  position: sticky; /*sticks to the top when scroll*/
+  top: 0; /*define sticky at the top of the screen*/
+  z-index: 1000; /*keeps it above everything*/
+  padding: 20px; /*space all around nav bar*/
 }
-  
+/*align nav items to center*/
 nav ul {
-  list-style: none;
+  list-style: none; /*remove bullet points*/
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 10px 0;
+  justify-content: center; /*center align the items horizontally*/
+  margin: auto; /*center the entire nav*/
+  padding: 10px 0; /*add spacing top and bottom*/
 }
-    
+/*add spacing between nav items*/    
 nav ul li {
   margin: 0 15px;
 }
     
 nav ul li a {
-  text-decoration: none;
+  text-decoration: none; /*remove underline*/
   color: black;
   font-size: 22px;
   font-weight: bold;
@@ -50,95 +50,95 @@ nav ul li a {
   
 nav .cart{
   font-size: 30px;
-  cursor: pointer;
-  position: absolute;
-  right: 20px;
-  top: 15px;
+  cursor: pointer; /*makes mouse cursor point on cart icon*/
+  position: absolute; /*makes position fixed*/
+  right: 20px; /*position towards right*/
+  top: 23px; /*position upwards*/
 }
 
 /* About Us Section */
 .about-us {
-  padding: 20px;
-  text-align: center;
+  padding: 20px; /* Add padding around the section for spacing */
+  text-align: center; /* Center align all text within this section */
   }
   
 .about-us h1 {
   font-size: 36px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /*add spacing below heading*/
 }
   
 .timeline {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
+  flex-direction: column; /*stack items vertically*/
+  gap: 30px; /*add spacing between each items*/
 }
   
 .timeline-item {
   display: flex;
-  gap: 20px;
-  align-items: center;
-  border-radius: 10px;
-  padding: 20px;
+  gap: 20px; /*add spacing between image and content*/
+  align-items: center; /*center items vertically*/
+  border-radius: 10px; /*rounded corners*/
+  padding: 20px; /*add space all around*/
 }
   
 .timeline-item img {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   border-radius: 10px;
 }
   
 .timeline-item .content h2 {
   font-size: 30px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin-bottom: 5px;
+  margin-bottom: 5px; /*space between heading and h3*/
 }
   
 .timeline-item .content h3 {
   font-size: 24px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin-top: 0;
 }
   
 .timeline-item .content p {
   font-size: 16px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
-  text-align:center;
+  line-height: 1.5; /*space between each lines*/
+  text-align:center;/*center align text*/
 }
   
 /* Responsive Design for about us page */
 @media (max-width:990px){
   .timeline-item img{
-    width:60%;
+    /*reduce image width for smaller screens*/
+    width:60%; 
     height:60%;
   }
 }
   
 @media (max-width: 890px) {
   .timeline-item {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column; /*stack items vertically*/
+    text-align: center; /*center align text*/
   }
   
   .timeline-item img {
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     display: flex;
-    flex-wrap: wrap;
-    order: -1;
+    flex-wrap: wrap; /*allow wrapping of content*/
+    order: -1; /*move image above content*/
   }
 }
 /*responsive design for nav bar*/
 @media (max-width: 640px) {
   body {
-    max-width: 640px;
+    max-width: 640px; /*restrict body width for smaller screens*/
   }
   nav ul li {
-    margin: 0 6px;
+    margin: 0 6px; /*reduce spacing between each nav items*/
   }
   nav ul li a {
-    text-decoration: none;
+    text-decoration: none; /*remove underlines*/
     color: black;
     font-size: 18px;
     font-weight: bold;
@@ -146,33 +146,25 @@ nav .cart{
   nav .cart {
     font-size: 30px;
     cursor: pointer;
-    position: absolute;
     right: 25px;
     top: 20px;
   }
   .logo img {
-    height: 40px;
-    /* Adjust the size of the logo */
-    width: auto;
-    /* Keep aspect ratio */
-  }
-  h1 {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    height: 40px;/* Adjust the size of the logo */
+    width: auto;/* Keep aspect ratio */
   }
 }
-/*responsive design for smaller screen*/
+/*styles for screen size below 475px*/
 @media (max-width: 475px) {
   body {
-    max-width: 475px;
+    max-width: 475px; /*restrict max-width for smaller screens*/
   }
   nav {
-    padding: 5px;
-    height: 30%;
+    padding: 5px; /*reduce padding all around for nav bar*/
+    height: 30%; /*adjust nav bar height*/
   }
   nav ul li {
-    margin: 0 3px;
-    padding: 0px;
+    margin: 0 3px; /*reduce spacing between nav items*/
   }
   nav ul li a {
     position: relative;
@@ -184,23 +176,15 @@ nav .cart{
     padding-bottom: 5px;
   }
   nav .cart {
-    font-size: 20px;
+    font-size: 20px; /*reduce cart icon size*/
     cursor: pointer;
-    position: absolute;
     right: 25px;
     top: 13px;
   }
   .logo img {
     display: block;
     margin-left: 5px;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
     width: 30px;
     height: auto;
-  }
-  h1 {
-    padding-top: 5px;
-    padding-bottom: 5px;
   }
 }

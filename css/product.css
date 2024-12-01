@@ -1,45 +1,48 @@
 /* General Styles */
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f8ff;
-  overflow-x: hidden;
+  margin: 0; /* remove default margin */
+  padding: 0; /* remove default padding */
+  background-color: #f0f8ff; /*light blue background*/
+  overflow-x: hidden; /* prevent horizontal scrolling */
 }
-    
 .logo {
-  position: absolute; /* Position the logo at the top left */
+  /*positioning logo at top left corner of page*/
+  position: absolute; /* keeps the logo fixed at the top left */
   top: 15px;
   left: 20px;
-  cursor: pointer;
+  cursor: pointer; /*makes mouse cursor point on logo*/
 }
   
 .logo img {
-  height: 40px; /* Adjust the size of the logo */
+  height: 40px; /* maintain height of the logo */
   width: auto; /* Keep aspect ratio */
 }
-
-  /* Navigation Bar */
+  
+/* Navigation Bar */
 nav {
-  background-color: rgba(241, 245, 249, 1);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 20px;
+  background-color: rgba(241, 245, 249, 1); /*light gray background*/
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*shadow effect*/
+  position: sticky; /*sticks to the top when scroll*/
+  z-index: 1000; /*keeps it above everything*/
+  top:0; /*define sticky at the top of the screen*/
+  padding: 20px; /*space all around nav bar*/
 }
+/*align nav items to center*/
 nav ul {
-  list-style: none;
+  list-style: none; /*remove bullet points*/
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 10px 0;
-}  
+  justify-content: center; /*center align the items horizontally*/
+  margin: auto; /*center the entire nav*/
+  padding: 10px 0; /*add spacing top and bottom*/
+}
+/*add spacing between nav items*/    
 nav ul li {
-  margin: 0 15px;
-}   
+  margin: 0 15px; 
+}
+    
 nav ul li a {
-  text-decoration: none;
+  text-decoration: none; /*remove underline*/
   color: black;
   font-size: 22px;
   font-weight: bold;
@@ -47,170 +50,155 @@ nav ul li a {
   
 nav .cart{
   font-size: 30px;
-  cursor: pointer;
-  position: absolute;
-  right: 20px;
-  top: 15px;  
+  cursor: pointer; /*makes mouse cursor point on cart icon*/
+  position: absolute; /*makes position fixed*/
+  right: 20px; /*position towards right*/
+  top: 23px;  /*position upwards*/
 }
 
 /* Product Section */
 .product-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px auto;
-  padding: 20px;
+  justify-content: center; /*center align product details horizontally*/
+  margin: 30px auto; /*add vertical spacing and center*/  
+  padding: 20px; /*add padding all around*/
 }
 
 .product-details {
   display: flex;
-  gap: 30px;
+  gap: 30px; /*spacing between image and info*/
 }
 .product-details img {
   width: 500px;
   height:470px;
-  border-radius: 20px;
+  border-radius: 20px; /*rounded corners*/
 }
   
 .product-info {
-  max-width: 600px;
+  max-width: 600px; /*limit the width of the info to look better*/
 }
   
 .product-info h1 {
   font-size: 36px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 20px; /*spacing above title*/
+  margin-bottom: 20px; /*spacing below title*/
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .product-info p {
   font-size: 20px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5; 
+  line-height: 1.5; /*space between lines*/
 }
 .quantity-select {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /*space below quantity*/
 }
 .quantity-select label {
-  margin-right: 10px;
+  margin-right: 10px; /*add spacing to right of label*/
   font-size: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
   
 .quantity-select select {
-  padding: 5px;
+  padding: 5px; /*padding all around inside select*/
   font-size: 16px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  cursor: pointer;
+  cursor: pointer; /*cursor shows pointer*/
 }
 
 .product-info button {
   background-color: #007BFF;
-  padding: 10px 20px;
+  padding: 10px 20px; /*spacing all around inside button*/
   font-size: 16px;
-  border:none;
-  border-radius: 10px;
-  cursor: pointer;
+  border:none; /*no border*/
+  border-radius: 10px; /*rounded corners*/
+  cursor: pointer; /*shows cursor pointer*/
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
   
 .product-info button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /*on hover, button shows darker blue*/
 }
   
 /* Related Products */
   
 .related-products {
-  margin: 30px auto;
-  padding: 20px;  
+  margin: 30px auto; /*vertical spacing and center*/
+  padding: 20px; /*add inner space all around*/
 }
 .related-products h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 30px; /*space below title*/
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 30px;
 }
   
 .related-products-scroll {
   display: flex;
-  gap: 20px;
-  overflow-x: auto;
+  gap: 20px; /*space between each products*/
+  overflow-x: auto; /*enable horizontal scrolling (x-axis)*/
 }
 .related-products-scroll::-webkit-scrollbar {
-  height: 8px;
+  height: 8px; /*set horizontal scroll bar height*/
 }
 
 .related-products-scroll::-webkit-scrollbar-thumb {
-  background-color: #ccc;
-  border-radius: 10px;
+  background-color: #ccc; /*light gray color*/
+  border-radius: 10px;/*rounded corners for scroll bar*/
 }
   
 .related-products-scroll .product {
-  text-align: center;  
+  text-align: center; /*center align product title*/  
 }
   
 .related-products-scroll .product img {
+  /*style product image*/
   width: 300px;
   height: 300px; 
   border-radius: 10px;
-}
-.related-products-scroll .product p {
-  margin-top: 10px;
-  font-size: 14px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
   
 /*responsive design for product page*/
 @media (max-width: 1080px){
   .product-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px auto;
-    padding: 20px;
-  }
-  .product-details {
-    display: flex;
-    gap: 30px;
+    justify-content: center; /*center items horizontally*/
+    align-items: center; /*center items vertically*/
   }
   .product-details img {
-    width: 40%;
-    height:auto;
-    border-radius: 20px;
-  }
-  .product-info {
-    max-width: 600px;
+    width: 40%; /*reduce image width*/
+    height:auto; /*maintain aspect ratio*/
+    border-radius: 20px; /*rounded corners*/
   }
 } 
 
-/*responsive design for smaller screen*/
+/*responsive design for screen sizes below 980px*/
 @media (max-width:980px){
   .product-details {
-    flex-direction: column;
+    flex-direction: column; /*set items vertically*/
   }
   .product-details img {
     display: block;
+    /*center image horizontally*/
     margin-left: auto;
     margin-right: auto;
-    width: 420px;
-    height: auto;
+    width: 420px; /*reduce image width*/
+    height: auto; /*maintain aspect ratio*/
   }
   .product-info p {
     font-size: 100%;
   }
 }
-/*responsive design for nav bar and product details*/
+/*responsive design for nav bar and product details for screen sizes below 640px*/
 @media (max-width: 640px) {
   body {
-    max-width: 640px;
+    max-width: 640px; /*restrict body width for smaller screens*/
   }
   nav ul li {
-    margin: 0 6px;
+    margin: 0 6px; /*reduce spacing between each nav items*/
   }
   nav ul li a {
-    text-decoration: none;
+    text-decoration: none; /*remove underlines*/
     color: black;
     font-size: 18px;
     font-weight: bold;
@@ -218,49 +206,33 @@ nav .cart{
   nav .cart {
     font-size: 30px;
     cursor: pointer;
-    position: absolute;
     right: 25px;
     top: 20px;
   }
   .logo img {
-    height: 40px;
-    /* Adjust the size of the logo */
-    width: auto;
-    /* Keep aspect ratio */
-  }
-  h1 {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  .product-details {
-    flex-direction: column;
+    height: 40px;/* Adjust the size of the logo */
+    width: auto; /* Keep aspect ratio */
   }
   .product-details img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 73%;
-    height: auto;
-  }
-  .product-info p {
-    font-size: 100%;
+    height: auto; 
   }
   .product-info h1 {
-    font-size: 200%;
+    font-size: 200%; /*adjust heading size*/
+    /* text-align: center; */
   }
 }
-/*rsponsive design for smaller screen*/
+/*rsponsive design for screen sizes sbelow 475px*/
 @media (max-width: 475px) {
   body {
-    max-width: 475px;
+    max-width: 475px; /*restrict max-width for smaller screens*/
   }
   nav {
-    padding: 5px;
-    height: 30%;
+    padding: 5px; /*reduce padding all around for nav bar*/
+    height: 30%; /*adjust nav bar height*/
   }
   nav ul li {
-    margin: 0 3px;
-    padding: 0px;
+    margin: 0 3px;/*reduce spacing between nav items*/
   }
   nav ul li a {
     position: relative;
@@ -272,42 +244,19 @@ nav .cart{
     padding-bottom: 5px;
   }
   nav .cart {
-    font-size: 20px;
+    font-size: 20px; /*reduce cart icon size*/
     cursor: pointer;
-    position: absolute;
     right: 25px;
     top: 13px;
   }
   .logo img {
     display: block;
     margin-left: 5px;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
     width: 30px;
     height: auto;
   }
-
-  h1 {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    }
-
-  .product-details {
-    flex-direction: column;
-  }
-
-  .product-details img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    height: auto;
-  }
-  .product-info p {
-    font-size: 100%;
-    }
   .product-info h1 {
-    font-size: 200%;
+    font-size: 170%;
+    /* text-align: center; */
   }
 }

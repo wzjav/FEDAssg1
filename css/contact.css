@@ -1,113 +1,111 @@
 /* General Styles */
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f8ff;
-    overflow-x: hidden;
+    margin: 0; /*remove default margin*/
+    padding: 0; /*remove default padding*/
+    background-color: #f0f8ff; /*light blue background*/
+    overflow-x: hidden; /* prevent horizontal scrolling */
 }
     
 .logo {
-    position: absolute; /* Position the logo at the top left */
+    position: absolute; /* keeps the logo at the top left */
     top: 15px;
     left: 20px;
-    cursor: pointer;
+    cursor: pointer; /*makes mouse cursor point on logo*/
 }
   
 .logo img {
-    height: 40px; /* Adjust the size of the logo */
-    width: auto; /* Keep aspect ratio */
+    height: 40px; /* maintain height of logo */
+    width: auto; /* keep aspect ratio */
 }
+
 /* Navigation Bar */
 nav {
-    background-color: rgba(241, 245, 249, 1);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 20px;
+    background-color: rgba(241, 245, 249, 1); /*light gray background*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*shadow effect*/
+    position: sticky; /*sticks to the top when scroll*/
+    top: 0; /*define sticky at the top of the screen*/
+    z-index: 1000;  /*keeps it above everything*/
+    padding: 20px; /*space all around nav bar*/
 }
+
   
 nav ul {
-    list-style: none;
+    list-style: none; /*remove bullet points*/
     display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 10px 0;
+    justify-content: center; /*center align the items horizontally*/
+    margin: 0 auto; /*center the entire nav*/
+    padding: 10px 0; /*add spacing top and bottom*/
 }
-    
+/*add spacing between nav items*/    
 nav ul li {
     margin: 0 15px;
 }
     
 nav ul li a {
-    text-decoration: none;
+    text-decoration: none; /*remove underline*/
     color: black;
     font-size: 22px;
     font-weight: bold;
 }
   
 nav .cart{
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 15px;
+    font-size: 30px; 
+    cursor: pointer;/*makes mouse cursor point on cart icon*/
+    position: absolute; /*makes position fixed*/
+    right: 20px;  /*position towards right*/
+    top: 23px; /*position upwards*/
 }
 
 /* Contact Us Section */
 h1{
-    padding-top: 20px;
+    padding-top: 20px; /*add spacing above heading*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: center; /*center align the heading text horizontally*/
 }
 form {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
-    margin: auto;
+    flex-direction: column; /*stack forms vertically*/
+    gap: 15px; /*add spacing between form sections*/
+    max-width: 400px; /*limit width of form*/
+    margin: auto; /*center form horizontally*/
     size:6in;
-    padding-top: 3px;
-    padding-left: 10px;
+    padding-top: 3px; /*spacing above form*/
+    padding-left: 10px; /*add spacing to left for alignment*/
 }
 input{
-    padding: 10px;
-    border: 2px solid #ccc;
-     border-radius: 10px;    
+    padding: 10px; /*add padding all around for space*/
+    border: 2px solid #ccc; /*light gray border*/
+    border-radius: 10px; /*rounded corners*/
 }
 input[type=Message] {
-    padding-bottom: 100px;
+    padding-bottom: 100px; /*larger space for longer text at messasges*/
 }
       
 button {
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-}
-button {
-    background-color: #007BFF;
-    color: #fff;
-    border: 2px solid;
-    cursor: pointer;
-}
-.submit{
+    padding: 10px; /*add padding all around*/
+    border: none; /*no border lines*/
+    border-radius: 10px; /*rounder corners*/
+    background-color: #007BFF; /*button color blue*/
+    color: #fff; /*text color white*/
+    cursor: pointer; /*mouse cursor change to pointer when at button*/
     font-size: 19px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
 }
     
 /*responsive design for contact us page*/
+/*adjust styles for screen sizes below 640px*/
 @media (max-width: 640px) {
     body {
-        max-width: 640px;
+        max-width: 640px; /*limit width*/
     }
     nav ul li {
-        margin: 0 6px;
+        margin: 0 6px; /*reduce spacing between each nav items*/
     }
     nav ul li a {
-        text-decoration: none;
+        text-decoration: none; /*remove underlines*/
         color: black;
         font-size: 18px;
         font-weight: bold;
@@ -116,35 +114,31 @@ button {
     nav .cart {
         font-size: 30px;
         cursor: pointer;
-        position: absolute;
         right: 25px;
         top: 20px;
     }
     
     .logo img {
-        height: 40px;
-        /* Adjust the size of the logo */
-        width: auto;
-        /* Keep aspect ratio */
+        height: 40px; /* Adjust the size of the logo */
+        width: auto; /* Keep aspect ratio */
     }
     h1 {
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 5px; /*reduce padding above heading*/
+        padding-bottom: 5px; /*reduce spacing below heading*/
     }
 }
 
-/*smaller screen design*/
+/*adjust styles for screen sizes below 475px*/
 @media (max-width: 475px) {
     body {
-        max-width: 475px;
+        max-width: 475px; /*restrict max-width for smaller screens*/
     }
     nav {
-        padding: 5px;
-        height: 30%;
+        padding: 5px; /*reduce padding all around for nav bar*/
+        height: 30%; /*adjust nav bar height*/
     }
     nav ul li {
-        margin: 0 3px;
-        padding: 0px;
+        margin: 0 3px; /*reduce spacing between nav items*/
     }
     nav ul li a {
         position: relative;
@@ -157,23 +151,18 @@ button {
     }
     
     nav .cart {
-        font-size: 20px;
+        font-size: 20px; /*reduce cart icon size*/
         cursor: pointer;
-        position: absolute;
         right: 25px;
         top: 13px;
     }
     .logo img {
         display: block;
         margin-left: 5px;
-        margin-right: auto;
-        margin-top: auto;
-        margin-bottom: auto;
         width: 30px;
         height: auto;
     }
     form{
-        padding-right: 10px;
+        padding-right: 10px; /*help center align form*/
     }
 }
-    
