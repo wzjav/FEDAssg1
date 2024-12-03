@@ -7,7 +7,7 @@ function addToCart() {
   const product = {
     name: "Hokkaido-Flavoured Strawberry Milk",
     price: 7.9,
-    image: "https://raw.githubusercontent.com/wzjav/FED_10269031_JavierGan_Assg01/refs/heads/main/Pictures/Hokkaido-Milk1.webp",
+    image: "../Pictures/Hokkaido-Milk1.webp",
     quantity: quantity,
   };
   
